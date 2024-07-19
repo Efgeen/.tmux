@@ -2,7 +2,7 @@
 
 # assert
 if [ -f ~/.tmux.conf ]; then
-    echo "[fail] : ~/.tmux.conf"
+    echo "[.tmux] : fail (~/.tmux.conf)"
     exit 1
 fi
 
@@ -12,5 +12,5 @@ pacman -S --needed --noconfirm tmux
 # ~/.tmux.conf
 ln -s "$(pwd)/.tmux.conf" ~/.tmux.conf
 
-echo "[success]"
+echo "[.tmux] : success"
 
