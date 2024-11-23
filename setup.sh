@@ -5,7 +5,7 @@ echo -e "\033[0;32m[.nvim] : setup...\033[0m"
 # ~/.tmux.conf
 if [ -f ~/.tmux.conf ]; then
     echo -e "\033[0;31m[.nvim] : fail (-f ~/.tmux.conf)\033[0m"
-    exit 1
+    exit
 fi
 
 pacman -S --noconfirm --needed tmux
